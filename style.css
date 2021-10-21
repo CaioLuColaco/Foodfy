@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 :root {
     --color-font: #111111;
+    --color-fontblur: #000000;
     --color-pink: #FBDFDB;
 }
 
@@ -17,7 +18,7 @@ body {
 }
 
 header {
-    height: 93px;
+    height: 63.695px;
     width: 940px;
     margin: 0 auto;
     
@@ -38,3 +39,37 @@ header a {
     color: var(--color-font);
 }
 
+.box {
+    background-color: pink;
+    height: 366px;
+    width: 940px;
+    border-radius: 30px;
+    margin: 0 auto;
+}
+.box_content {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.box_content h1 {
+    height: 38px;
+    width: 305px;
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: bold;
+    margin: 117px auto auto 60px;
+}
+.box_content h2 {
+    height: 84px;
+    width: 316px;
+    font-size: 17.5px;
+    line-height: 27px;
+    margin: 10px auto auto 60px;
+    color: var(--color-fontblur);
+    opacity: 0.65;
+}
+.box_content img {
+    height: 300px;
+    width: 216px;
+    margin:  66px auto auto 154px;
+}
