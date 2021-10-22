@@ -4,6 +4,7 @@
     --color-font: #111111;
     --color-fontblur: #000000;
     --color-pink: #FBDFDB;
+    --color-grayfooter: #EEEEEE;
 }
 
 * {
@@ -85,5 +86,44 @@ header a:hover {
 .cards_title h1 {
     font-size: 24px;
     line-height: 28px;
+    font-weight: bold;
 }
 
+.cards {
+    margin: 0 auto 50px auto;
+    width: 940px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+}
+.card_image img{
+    border-radius: 15px;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 140px;
+}
+.card_content h2{
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 5px;
+}
+
+.card_content h3{
+    font-size: 14px;
+    line-height: 16px;
+    opacity: 0.7;
+}
+
+.footer {
+    height: 62px;
+    width: 1900px;
+    margin: 0 auto auto auto;
+    text-align: center;
+    background-color: var(--color-grayfooter);
+}
+.footer p {
+    font-size: 14px;
+    margin: 10px auto auto auto;
+    opacity: 0.7;
+    padding-top: 23px;
+}
