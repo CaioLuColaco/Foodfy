@@ -116,7 +116,7 @@ header a:hover {
 
 .footer {
     height: 62px;
-    width: 1900px;
+    width: 100%;
     margin: 0 auto auto auto;
     text-align: center;
     background-color: var(--color-grayfooter);
