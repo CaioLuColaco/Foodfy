@@ -11,7 +11,6 @@ for (let card of cards) {
         modalOverlay.querySelector("h2").innerHTML = card.querySelector("h3").textContent
     })
 }
-/* precisando ajeitar o preenchimento dos titulos do modal */
 document.querySelector('.close-modal').addEventListener('click', function(){
     modalOverlay.classList.remove('active')
 })

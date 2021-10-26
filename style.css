@@ -168,8 +168,8 @@ header a:hover {
 
 .modal {
     background-color: white;
-    width: 660px;
-    height: 413px;
+    width: 600px;
+    height: 375px;
     margin: 20vh auto;
     position: relative;
     border-radius: 16px;
@@ -177,7 +177,7 @@ header a:hover {
 }
 
 .modal img {
-    width: 600px;
+    width: 540px;
     height: 200px;
     margin: 30px 30px 20px;
     border-radius: 15px;
@@ -186,7 +186,7 @@ header a:hover {
 .modal h1 {
     font-size: 24px;
     line-height: 28px;
-    margin: 0 auto 10px auto;
+    margin: 0px auto 10px auto;
 }
 
 .modal h2 {
@@ -194,7 +194,7 @@ header a:hover {
     line-height: 21px;
     color: #777777;
     opacity: 0.7;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
 }
 
 .close-modal {
