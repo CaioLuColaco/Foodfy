@@ -159,8 +159,8 @@ header a:hover {
     height: 100%;
     position: fixed;
     top: 0;
-    /*opacity: 0;
-    visibility: hidden;*/
+    opacity: 0;
+    visibility: hidden;
 }
 
 .modal {
@@ -199,4 +199,11 @@ header a:hover {
     line-height: 19px;
     color: #999999;
     cursor: pointer;
+}
+
+/* Modal Active */
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
 }
