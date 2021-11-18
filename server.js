@@ -10,7 +10,8 @@ server.use(express.static('assets'))
 
 nunjucks.configure("views", {
     express:server,
-    autoescape: false
+    autoescape: false,
+    noCache: true
 })
 
 server.get("/", function(req, res) {
@@ -30,6 +31,10 @@ server.get("/sobre", function(req, res) {
 server.get("/receitas", function(req, res) {
     return res.render('receitas', {items: foods})
 })
+
+server.use(function(req, res) {
+    res.status(404).render("not-found");
+  });
 
 server.listen(5000, function() {
     console.log('server is running')
