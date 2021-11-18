@@ -9,11 +9,20 @@ server.use(express.static('public'))
 server.use(express.static('assets'))
 
 nunjucks.configure("views", {
-    express:server
+    express:server,
+    autoescape: false
 })
 
 server.get("/", function(req, res) {
-    return res.render('home', {items: foods})
+    const data = {
+        name: "Foodfy",
+        boxTitle: "As melhores receitas",
+        boxSubt: "Aprenda a construir os melhores pratos com receitas criadas por profissionais do mundo inteiro.",
+        imgChef: "chef",
+        cardTitle: "Mais acessados",
+    }
+
+    return res.render('home', {items: foods, data})
 })
 server.get("/sobre", function(req, res) {
     return res.render('sobre')
