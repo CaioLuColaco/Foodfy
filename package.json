@@ -6,11 +6,20 @@
   "scripts": {
     "start": "nodemon server.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CaioLuColaco/Foodfy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CaioLuColaco/Foodfy/issues"
+  },
+  "homepage": "https://github.com/CaioLuColaco/Foodfy#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "nodemon": "^2.0.15",
     "nunjucks": "^3.2.3"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.15"
   }
 }
