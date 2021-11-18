@@ -1,21 +1,11 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
-        <link rel="stylesheet" href="/style.css">
-        <link rel="shortcut icon" href="/foodfyfavicon.ico" type="image/x-icon">
-        <title>Foodfy</title>
-    </head>
+{% extends "layout.html" %}
 
-    <body>
-        <header>
-            <div class="links">
-                <a href="/"><img src="/logo.png" alt="Logo"></a>
-                <a href="/sobre">Sobre</a>
-                <a href="/receitas">Receitas</a>
-            </div>
-        </header>
+{% block head %}
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+    <title>Foodfy</title>
+{% endblock %}
 
+{% block content %}
         <div class="box">
             <div class="box_content">
                 <div class="box_text">
@@ -99,13 +89,7 @@
                 <img src="" alt="">
                 <h1></h1>
                 <h2></h2>
-                <a class="close-modal">Fechar modal</a>
+                <a class="close-modal">Fechar</a>
             </div>
         </div>
-        <script src="/scripts.js"></script>
-
-        <div class="footer">
-            <p>Todos direitos reservados, receitas Foodfy.</p>
-        </div>
-    </body>
-</html>
+{% endblock %}
