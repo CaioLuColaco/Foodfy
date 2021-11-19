@@ -117,6 +117,11 @@ header a:hover {
     opacity: 0.7;
 }
 
+.receitas_title {
+    text-align: center;
+    margin: 30px auto 50px;
+}
+
 .footer {
     height: 62px;
     width: 100%;
