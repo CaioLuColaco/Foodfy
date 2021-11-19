@@ -35,6 +35,16 @@ server.get("/recipes/:index", function(req, res) {
     const recipes = foods;
     const recipeIndex = req.params.index;
 
+    const adress = recipes.find(function(adress){
+        if (adress.index == recipeIndex) {
+            return true
+        }
+    })
+
+    if (!adress) {
+        return res.send("Receita não foi encontrada!")
+    }
+
     return res.render("recipes", {item: recipes[recipeIndex]})
 })
 
