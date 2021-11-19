@@ -223,12 +223,10 @@ header a:hover {
 }
 
 .recipe {
-    margin: 0 auto 0 auto;
+    margin: 0 auto 50px auto;
     width: 940px;
 }
-.recipe {
-    height: 170px;
-}
+
 .title_recipe h1 {
     margin-top: 20px;
     text-align: center;
@@ -241,4 +239,32 @@ header a:hover {
     text-align: center;
     font-size: 20px;
     line-height: 24px;
+}
+
+.box_flexive {
+    margin-top: 50px;
+}
+.box_menu {
+    font-size: 23px;
+    line-height: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.box_menu button {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: bold;
+    color: #777777;
+    cursor: pointer;
+}
+.box_topics {
+    margin-top: 20px;
+    margin-bottom: 39px;
+    font-size: 18px;
+    line-height: 26px;
+    color: #777777;
+}
+.box_hidden {
+    display: none;
 }

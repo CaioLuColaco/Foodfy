@@ -11,6 +11,17 @@ for (let card of cards) {
         modalOverlay.querySelector("h2").innerHTML = card.querySelector("h3").textContent
     })
 }
-document.querySelector('.close-modal').addEventListener('click', function(){
-    modalOverlay.classList.remove('active')
-})
+
+
+
+$(function() {
+    $('.main-btn').click(function(e) {
+        if($(e.target).text() == "Mostrar"){
+            $(e.target).parents().siblings('.box_topics').slideDown();
+            $(e.target).text("Esconder");
+        }else{
+            $(e.target).parents().siblings('.box_topics').slideUp();
+            $(e.target).text("Mostrar");
+        }
+    });
+});
